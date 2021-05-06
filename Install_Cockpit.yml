@@ -15,12 +15,12 @@
       state: enabled 
      
   - name: Restart service cockpit, in all cases
-     service:
+    service:
        name: cockpit.socket
        state: restarted
        
   - name: Enable service cockpit, and not touch the state
-     service:
+    service:
        name: cockpit.socket
        enabled: yes   
 ...
